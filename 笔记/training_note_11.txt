@@ -1,0 +1,23 @@
+尽量在全局的地方try，把有可能报错的代码放进去
+
+x轴居中的计算办法：
+图片宽的一半 - 飞机宽度的一半
+
+子弹位置：
+x轴：飞机的x + 飞机宽度的一半 - 子弹宽度的一半
+y轴：飞机的y - 子弹的y
+
+for循环里加_表示没有用到变量，用于遍历次数，如
+for _ in range(0, 10)
+
+pygame.display.set_mode创建一个窗口
+pygame.image.load加载图片
+window.blit 能够将图片绘制到窗口
+pygame.display.set_caption函数设置窗口标题
+pygame.display.set_icon函数能够设置窗口图标
+pygame.display.update刷新页面
+pygame.event.get函数能够获得当前所有发生事件(键盘按下、鼠标点击等)
+pygame.QUIT表示窗口关闭按钮被点击事件
+pygame.KEYDOWN表示键盘被按下事件
+pygame.K_SPACE表示空格按钮
+
